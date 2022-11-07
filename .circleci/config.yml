@@ -2,13 +2,15 @@ version: 2.1
 
 orbs:
   slack: circleci/slack@4.10.1
+
+
 commands:
   notify_on_failure:
     steps:
       - slack/notify:
-        event: fail
-        channel: cicd-project
-        template: basic_fail_1
+          event: fail
+          channel: cicd-project
+          template: basic_fail_1
 # commands:
 #   destroy-environment:
 #     description: Destroy back-end and front-end cloudformation stacks given a workflow ID.
