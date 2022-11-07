@@ -7,7 +7,7 @@ commands:
     steps:
       - slack/notify:
         event: fail
-        channel: CI/CD project
+        channel: cicd-project
         template: basic_fail
 # commands:
 #   destroy-environment:
@@ -310,7 +310,7 @@ jobs:
     steps:
       - slack/notify:
         event: pass
-        channel: CI/CD project
+        channel: cicd-project
         template: success_tagged_deployment
 
 workflows:
