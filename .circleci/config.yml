@@ -311,9 +311,9 @@ jobs:
       - image: cimg/base:stable
     steps:
       - slack/notify:
-        event: pass
-        channel: cicd-project
-        template: success_tagged_deployment
+          event: pass
+          channel: cicd-project
+          template: success_tagged_deployment
 
 workflows:
   default:
