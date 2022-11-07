@@ -8,7 +8,7 @@ commands:
       - slack/notify:
         event: fail
         channel: cicd-project
-        template: basic_fail
+        template: basic_fail_1
 # commands:
 #   destroy-environment:
 #     description: Destroy back-end and front-end cloudformation stacks given a workflow ID.
