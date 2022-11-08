@@ -13,24 +13,24 @@ commands:
           template: basic_fail_1
   install_awscli:
     description: install aws cli
-    steps:
-      - run:
-        name: install aws cli v2
-        command:
-          curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-          unzip awscliv2.zip
-          sudo ./aws/install
+      steps:
+        - run:
+          name: install aws cli v2
+          command:
+            curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            unzip awscliv2.zip
+            sudo ./aws/install
   install_ansible:
     description: install ansible
-    steps:
-      - run:
-        name: install ansible
-        command:
-          sudo apt update
-          sudo apt install software-properties-common
-          sudo add-apt-repository --yes --update ppa:ansible/ansible
-          sudo apt install ansible
-          
+      steps:
+        - run:
+          name: install ansible
+          command:
+            sudo apt update
+            sudo apt install software-properties-common
+            sudo add-apt-repository --yes --update ppa:ansible/ansible
+            sudo apt install ansible
+            
 
 # commands:
 #   destroy-environment:
